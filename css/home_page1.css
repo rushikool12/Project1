@@ -1,0 +1,89 @@
+body {
+	font-family: "Trebuchet MS", Arial;
+	margin: 2%;
+}
+.head{grid-area: a;}
+.nav{grid-area: b;}
+.imgg{grid-area: c;}
+.main{grid-area: d;}
+.wrapper {
+    display: grid;
+	grid-template-columns: auto auto;
+    grid-gap: 1em;
+	grid-template-areas:
+	"a a"
+	"b b"
+	"d c"
+	"d c";
+}
+ul#navlist { 
+padding: 0;
+margin: 0;
+list-style-type: none;
+float: left;
+width: 100%;
+text-align: center;
+color: #fff;
+background-color: #036;
+}
+ul#navlist li { display: inline; }
+ul#navlist li a
+{
+float: left;
+width: 7em;
+color: #fff;
+background-color: #036;
+padding: 0.2em 1em;
+text-decoration: none;
+border-right: 1px solid #fff;
+}
+ul#navlist li a:hover
+{
+background-color: #369;
+color: #fff;
+}
+h1 {
+	font-weight: bold;
+	text-align: center;
+}
+
+h2	{
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+/* unvisited link */
+a:link {
+    color: #7EE0FF;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+	text-decoration: none;
+}
+figure	{ 
+	float: right;
+	clear: both;
+	text-align: center;
+	font-style: italic;
+	font-size: 80%;
+}
+.important {
+			font-size: 110%;
+			color: white;
+			background-color: black;
+		}
